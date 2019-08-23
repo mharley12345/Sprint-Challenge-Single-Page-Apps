@@ -2,24 +2,24 @@ import React from 'react'
 import {Card, Icon, Image} from 'semantic-ui-react'
 
 export default function CharacterCard (props) {
-  const { character } = props;
+  const { name,image,location,species,status } = props.character
   return(
  <div>
   <Card>
-    <Image src={character.image} wrapped ui={true} />
+    <Image src={image} wrapped ui={true} />
     <Card.Content>
-      <Card.Header>{character.name}</Card.Header>
+      <Card.Header>{name}</Card.Header>
       <Card.Meta>
-        <span className='date'>{character.species}</span>
+        <span className='date'>{species}</span>
       </Card.Meta>
       <Card.Description>
-        Status:{character.status}
+        Status:{status}
       </Card.Description>
     </Card.Content>
     <Card.Content extra>
       <p>
         <Icon name='location arrow' />
-        Location: {character.location.name}
+        Location: {location.name}
       </p>
     </Card.Content>
   </Card>
