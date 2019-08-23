@@ -1,5 +1,5 @@
 import React from 'react'
-import { Card } from 'semantic-ui-react'
+import { Card ,List} from 'semantic-ui-react'
 export default function LocationCard (props) {
   const { location } = props;
   return (
