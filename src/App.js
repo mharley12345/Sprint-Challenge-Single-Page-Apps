@@ -1,15 +1,18 @@
 import React from "react";
-// import TabNav from "./components/TabNav.js";
+import TabNav from "./components/TabNav.js";
 import Header from "./components/Header.js";
-import CharacterCard from "./components/CharacterCard"
+import AppRouter from "./components/AppRouter"
+
 
 
 export default function App() {
   return (
     <main>
+   
       <Header />
-      <CharacterCard/>
-      {/* <TabNav /> */}
+
+    <TabNav />
+    <AppRouter/>
     </main>
   );
 }
